@@ -218,12 +218,6 @@ class SoftMatcherTrainerc(object):
             if test_metrics[2] > best_score:
                 best_score = test_metrics[2]
 
-                # save model
-                if best_score >= 74:
-                    dir_ = os.getcwd()
-                    dir = os.path.join(dir_, 'save_model/' + str(best_score) + '.pth')
-                    torch.save(self.model, dir)
-
             print("best f1: %.2f" % (best_score), flush=True)
 
             self.model.zero_grad()
@@ -300,7 +294,7 @@ class SoftMatcherTrainerc(object):
 
     def eval_result(self, train_data, devs, tests):
         dir_ = os.getcwd()
-        dir = os.path.join(dir_, 'save_model/' + '87.41662159725978' + '.pth')
+        dir = os.path.join(dir_, 'save_model/' + 'best' + '.pth')
         self.model = torch.load(dir)
 
         logits, predicted, triggers = self.get_triggervec(train_data)

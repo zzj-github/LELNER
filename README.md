@@ -1,8 +1,8 @@
 # LELNER
 
 ## Requirements
-    Python >= 3.6
-    PyTorch = 1.5
+    python >= 3.6
+    pytorch = 1.5
 * If pytorch > 1.5, an error will be reported when running the code.<br>
 
 ## Run

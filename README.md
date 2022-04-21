@@ -1,12 +1,12 @@
 # LELNER
-## Requirements
 
-python >= 3.6
-pytorch = 1.5
+## Requirements
+    Python >= 3.6
+    PyTorch = 1.5
+* If pytorch > 1.5, an error will be reported when running the code<br>
 
 ## Run
-you can run the following commands to verify the results of our model
-
-python supervised.py
-
-
+* You can run the following commands to verify the results of our model<br>
+```
+python supervised.py 
+```
